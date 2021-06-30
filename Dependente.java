@@ -26,4 +26,9 @@ public class Dependente {
         this.idade = idade;
     }
 
+    //Imprime o dependente
+    public void imprime(){
+        System.out.print("-Nome: " + this.nome);
+        System.out.println(" Idade: " + this.idade);
+    }
 }

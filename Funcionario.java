@@ -3,16 +3,6 @@ public class Funcionario {
     private String nome;
     private int matricula;
 
-    //Adição de dependentes
-    private static final int LIMITE_DEPENDENTES = 10;
-    private Dependente[] vetDep = new Dependente[10];
-
-    public void addDependente ( Dependente d) {
-        for(int i = 0; i < LIMITE_DEPENDENTES; i++) {
-            vetDep[i] = d;
-        }
-    }
-
     //Metódo Construtor
     public Funcionario (String nome, double salario, int matricula) {
         this.salario = validaSalario(salario);
@@ -24,6 +14,18 @@ public class Funcionario {
     public static final int PRESTADOR_SERVICOS = -1;
     public Funcionario (String nome, double salario) {
         this(nome, salario, PRESTADOR_SERVICOS);
+    }
+
+    //Adição de dependentes
+    private static final int LIMITE_DEPENDENTES = 10;
+    private int cont_dependentes = 0;
+    private Dependente[] vetDep = new Dependente[LIMITE_DEPENDENTES];
+
+    public void addDep (Dependente d) {
+        if ( cont_dependentes < LIMITE_DEPENDENTES) {
+            vetDep[cont_dependentes] = d;
+            cont_dependentes++;
+        }
     }
 
     //Funções para set/get de nome
@@ -67,5 +69,17 @@ public class Funcionario {
         }
 
         return salario;
+    }
+
+    //Imprime atributos e lista de dependentes
+    public void imprime(){
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Salario: " + this.salario);
+        System.out.println("Matricula: " + this.matricula);
+        System.out.println("Dependentes: ");
+        for(int i = 0; i < cont_dependentes; i++) {
+            this.vetDep[i].imprime();
+        };
+        System.out.println();
     }
 }
