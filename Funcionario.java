@@ -10,7 +10,7 @@ public class Funcionario {
         this.matricula = matricula;
     }
 
-    //Metódo Construtor para funcionários sem matrícula(a matrícula será igual a 1)
+    //Metódo Construtor para funcionários sem matrícula(a matrícula será igual a -1)
     public static final int PRESTADOR_SERVICOS = -1;
     public Funcionario (String nome, double salario) {
         this(nome, salario, PRESTADOR_SERVICOS);
@@ -71,7 +71,7 @@ public class Funcionario {
         return salario;
     }
 
-    //Imprime atributos e lista de dependentes
+    //Imprime Funcionario e lista de dependentes
     public void imprime(){
         System.out.println("Nome: " + this.nome);
         System.out.println("Salario: " + this.salario);
@@ -79,7 +79,6 @@ public class Funcionario {
         System.out.println("Dependentes: ");
         for(int i = 0; i < cont_dependentes; i++) {
             this.vetDep[i].imprime();
-        };
-        System.out.println();
+        }
     }
 }

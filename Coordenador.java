@@ -7,8 +7,9 @@ public class Coordenador extends Funcionario {
         this.projeto = projeto;
     }
 
+    //Imprime Coordenador e seu projeto 
     public void imprime () {
         super.imprime();// aproveitando também o imprime da superclasse.
-        System.out.println("Atributos especiais do cargo: projeto " + this.projeto);    
+        System.out.println("Projeto: " + this.projeto);    
     }
 }
