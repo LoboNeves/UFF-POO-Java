@@ -76,9 +76,12 @@ public class Funcionario {
         System.out.println("Nome: " + this.nome);
         System.out.println("Salario: " + this.salario);
         System.out.println("Matricula: " + this.matricula);
-        System.out.println("Dependentes: ");
-        for(int i = 0; i < contDependentes; i++) {
-            this.vetDep[i].imprime();
+
+        if (contDependentes > 0) {
+            System.out.println("Dependentes: ");
+            for(int i = 0; i < contDependentes; i++) {
+                this.vetDep[i].imprime();
+            }
         }
     }
 }

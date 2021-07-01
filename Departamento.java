@@ -1,6 +1,11 @@
 public class Departamento {
     private String nome;
 
+    //Metódo Construtor
+    public Departamento (String nome) {
+        this.nome = nome;
+    }
+
     //Adição de funcionários
     private static final int LIMITE_FUNCIONARIOS = 50;
     private int contFuncionarios = 0;

@@ -10,6 +10,7 @@ public class Coordenador extends Funcionario {
     //Imprime Coordenador e seu projeto 
     public void imprime () {
         super.imprime();// aproveitando também o imprime da superclasse.
-        System.out.println("Projeto: " + this.projeto);    
+        System.out.println("Projeto: " + this.projeto);
+        System.out.println();    
     }
 }

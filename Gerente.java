@@ -19,6 +19,7 @@ public class Gerente extends Funcionario{
     public void imprime () {
         super.imprime();// aproveitando também o imprime da superclasse.
         System.out.println("Bonus: " + this.bonus);
-        System.out.println("Carro: " + this.carro);    
+        System.out.println("Carro: " + this.carro);
+        System.out.println();    
     }
 }
