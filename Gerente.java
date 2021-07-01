@@ -21,5 +21,4 @@ public class Gerente extends Funcionario{
         System.out.println("Bonus: " + this.bonus);
         System.out.println("Carro: " + this.carro);    
     }
-
 }

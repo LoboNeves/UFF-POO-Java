@@ -18,13 +18,13 @@ public class Funcionario {
 
     //Adição de dependentes
     private static final int LIMITE_DEPENDENTES = 10;
-    private int cont_dependentes = 0;
+    private int contDependentes = 0;
     private Dependente[] vetDep = new Dependente[LIMITE_DEPENDENTES];
 
     public void addDep (Dependente d) {
-        if ( cont_dependentes < LIMITE_DEPENDENTES) {
-            vetDep[cont_dependentes] = d;
-            cont_dependentes++;
+        if ( contDependentes < LIMITE_DEPENDENTES) {
+            vetDep[contDependentes] = d;
+            contDependentes++;
         }
     }
 
@@ -77,7 +77,7 @@ public class Funcionario {
         System.out.println("Salario: " + this.salario);
         System.out.println("Matricula: " + this.matricula);
         System.out.println("Dependentes: ");
-        for(int i = 0; i < cont_dependentes; i++) {
+        for(int i = 0; i < contDependentes; i++) {
             this.vetDep[i].imprime();
         }
     }
