@@ -1,3 +1,4 @@
+//Programa para testar a criação de funcionários e seus dependentes, como a impressão de ambos.
 public class LAB1 {
     public static void main (String[] args) {
         Funcionario f1 = new Funcionario("Jose", 3000, 123);
