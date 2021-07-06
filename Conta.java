@@ -1,11 +1,11 @@
 public abstract class Conta {
     protected String nome;
     protected int cpf;
-    protected int saldo;
+    protected double saldo;
     protected int numeroConta;
 
     //Método Construtor
-    public Conta (String nome, int cpf, int saldo, int numeroConta) {
+    public Conta (String nome, int cpf, double saldo, int numeroConta) {
         this.nome = nome;
         this.cpf = cpf;
         this.saldo = saldo;
