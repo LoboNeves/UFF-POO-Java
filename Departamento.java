@@ -1,7 +1,7 @@
 public class Departamento {
     private String nome;
 
-    //Metódo Construtor
+    //Método Construtor
     public Departamento (String nome) {
         this.nome = nome;
     }

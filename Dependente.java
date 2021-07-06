@@ -2,7 +2,7 @@ public class Dependente {
     private String nome;
     private int idade;
 
-    //Metódo Construtor
+    //Método Construtor
     public Dependente (String nome, int idade) {
         this.nome = nome;
         this.idade = idade;

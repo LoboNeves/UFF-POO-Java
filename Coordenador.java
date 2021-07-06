@@ -1,7 +1,7 @@
 public class Coordenador extends Funcionario {
     private String projeto;
 
-    //Metódo Construtor
+    //Método Construtor
     public Coordenador (String nome, double salario, int matricula, String projeto) {
         super(nome, salario, matricula); //reaproveitando construtor da superclasse
         this.projeto = projeto;

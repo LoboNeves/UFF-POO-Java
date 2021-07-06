@@ -3,14 +3,14 @@ public class Funcionario {
     private String nome;
     private int matricula;
 
-    //Metódo Construtor
+    //Método Construtor
     public Funcionario (String nome, double salario, int matricula) {
         this.salario = validaSalario(salario);
         this.nome = nome;
         this.matricula = matricula;
     }
 
-    //Metódo Construtor para funcionários sem matrícula(a matrícula será igual a -1)
+    //Método Construtor para funcionários sem matrícula(a matrícula será igual a -1)
     public static final int PRESTADOR_SERVICOS = -1;
     public Funcionario (String nome, double salario) {
         this(nome, salario, PRESTADOR_SERVICOS);
