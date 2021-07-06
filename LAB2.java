@@ -1,4 +1,4 @@
-//Programa para testar a criação de Coordenadores, Gerentes, Departamentos e seus funcionários, como a impressão de ambos.
+//Programa para testar a criação de heranças, com as classes Coordenadores, Gerentes, Departamentos e seus funcionários, como a impressão de ambos.
 public class LAB2 {
     public static void main (String[] args) {
         Funcionario f1 = new Funcionario("Jose", 3000, 123);
