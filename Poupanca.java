@@ -10,7 +10,7 @@ public class Poupanca extends Conta {
     //Implementação da função para conta poupança
     protected double creditoDebito (double valor) {
         if (valor >= 0) saldo += valor;
-        else if(saldo - valor >= 0)saldo -= valor;
+        else if(saldo - valor >= 0) saldo -= valor;
         else System.out.println("Operacao invalida");
 
         return saldo;
