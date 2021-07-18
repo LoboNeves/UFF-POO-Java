@@ -1,4 +1,4 @@
-public abstract class Conta {
+public abstract class Conta implements Comparador{
     protected String nome;
     protected int cpf;
     protected double saldo;
@@ -11,6 +11,14 @@ public abstract class Conta {
         this.saldo = saldo;
         this.numeroConta = numeroConta;
     }
+
+    //Método Comparador
+    public int comparadoA(Comparador x) {
+        Conta f = (Conta) x;
+        if (saldo > f.saldo) return MAIOR;
+        else if (saldo < f.saldo) return MENOR;
+        return IGUAL;
+    }    
 
     //Imprime Conta
     public void imprime(){

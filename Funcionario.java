@@ -1,4 +1,4 @@
-public class Funcionario {
+public class Funcionario implements Comparador{
     private double salario;
     private String nome;
     private int matricula;
@@ -70,6 +70,15 @@ public class Funcionario {
 
         return salario;
     }
+
+    //Método Comparador
+    public int comparadoA(Comparador x) {
+        Funcionario f = (Funcionario) x;
+        if (nome.compareTo(f.getNome()) > 0) return MAIOR;
+        else if (nome.compareTo(f.getNome()) < 0) return MENOR;
+        return IGUAL;
+    }
+
 
     //Imprime Funcionario e lista de dependentes
     public void imprime(){
