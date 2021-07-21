@@ -18,7 +18,16 @@ public abstract class Conta implements Comparador{
         if (saldo > f.saldo) return MAIOR;
         else if (saldo < f.saldo) return MENOR;
         return IGUAL;
-    }    
+    }
+
+    //Método sacar tratando exceção
+    public void sacar(double quantia) throws FundosInsuficientes {
+        if(quantia <= saldo) saldo -= quantia;
+        else {
+            double diferenca = quantia - saldo;
+            throw new FundosInsuficientes("R$" + diferenca);
+        }
+    }
 
     //Imprime Conta
     public void imprime(){
